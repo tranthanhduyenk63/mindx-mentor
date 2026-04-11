@@ -1,0 +1,72 @@
+[
+  {
+    "id": "o001",
+    "customerId": "c001",
+    "productId": "p002",
+    "quantity": 1,
+    "totalPrice": 15000000
+  },
+  {
+    "id": "o002",
+    "customerId": "c003",
+    "productId": "p001",
+    "quantity": 2,
+    "totalPrice": 14000000
+  },
+  {
+    "id": "o003",
+    "customerId": "c002",
+    "productId": "p005",
+    "quantity": 3,
+    "totalPrice": 900000
+  },
+  {
+    "id": "o004",
+    "customerId": "c005",
+    "productId": "p004",
+    "quantity": 2,
+    "totalPrice": 1000000
+  },
+  {
+    "id": "o005",
+    "customerId": "c004",
+    "productId": "p007",
+    "quantity": 1,
+    "totalPrice": 4000000
+  },
+  {
+    "id": "o006",
+    "customerId": "c006",
+    "productId": "p003",
+    "quantity": 1,
+    "totalPrice": 8000000
+  },
+  {
+    "id": "o007",
+    "customerId": "c008",
+    "productId": "p006",
+    "quantity": 2,
+    "totalPrice": 2400000
+  },
+  {
+    "id": "o008",
+    "customerId": "c007",
+    "productId": "p009",
+    "quantity": 1,
+    "totalPrice": 600000
+  },
+  {
+    "id": "o009",
+    "customerId": "c009",
+    "productId": "p008",
+    "quantity": 1,
+    "totalPrice": 2000000
+  },
+  {
+    "id": "o010",
+    "customerId": "c010",
+    "productId": "p010",
+    "quantity": 1,
+    "totalPrice": 1500000
+  }
+]
