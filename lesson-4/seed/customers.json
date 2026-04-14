@@ -1,60 +1,50 @@
 [
   {
-    "id": "c001",
     "name": "Nguyễn Văn A",
     "email": "nguyenvana@example.com",
     "age": 28
   },
   {
-    "id": "c002",
     "name": "Trần Thị B",
     "email": "tranthib@example.com",
     "age": 32
   },
   {
-    "id": "c003",
     "name": "Lê Văn C",
     "email": "levanc@example.com",
     "age": 24
   },
   {
-    "id": "c004",
     "name": "Phạm Thị D",
     "email": "phamthid@example.com",
     "age": 29
   },
   {
-    "id": "c005",
     "name": "Hoàng Văn E",
     "email": "hoangvane@example.com",
     "age": 35
   },
   {
-    "id": "c006",
     "name": "Đỗ Thị F",
     "email": "dothif@example.com",
     "age": 27
   },
   {
-    "id": "c007",
     "name": "Vũ Văn G",
     "email": "vuvang@example.com",
     "age": 31
   },
   {
-    "id": "c008",
     "name": "Phan Thị H",
     "email": "phanthih@example.com",
     "age": 26
   },
   {
-    "id": "c009",
     "name": "Ngô Văn I",
     "email": "ngovani@example.com",
     "age": 33
   },
   {
-    "id": "c010",
     "name": "Đặng Thị K",
     "email": "dangthik@example.com",
     "age": 30
