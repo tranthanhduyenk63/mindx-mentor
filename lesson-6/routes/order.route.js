@@ -1,10 +1,15 @@
 import { Router } from "express";
-import { OrderController } from "../controllers/order.controller";
+import { OrderController } from "../controllers/order.controller.js";
+import { authMiddleware } from "../middlewares/auth.middleware.js";
 
 const orderRouter = Router();
 
-orderRouter.get("/highvalue", OrderController.findHighValueOrders);
-orderRouter.post("/", OrderController.create);
-orderRouter.put("/:orderId", OrderController.updateOrder);
+orderRouter.get(
+  "/highvalue",
+  authMiddleware,
+  OrderController.findHighValueOrders,
+);
+orderRouter.post("/", authMiddleware, OrderController.create);
+orderRouter.put("/:orderId", authMiddleware, OrderController.updateOrder);
 
 export default orderRouter;

@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node index.js"
+    "dev": "node --watch index.js"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "express": "^5.2.1",
-    "mongoose": "^8.23.0"
+    "mongoose": "^8.23.0",
+    "uuid": "^13.0.0"
   }
 }
