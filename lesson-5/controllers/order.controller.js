@@ -1,11 +1,12 @@
 import { Order } from "../models/order.model.js";
+import { Product } from "../models/product.model.js";
 
 export const OrderController = {
   findHighValueOrders: async (req, res) => {
     const orders = await Order.find();
 
     const highvalueOrders = orders.filter(
-      (order) => order.totalPrice >= 10000000
+      (order) => order.totalPrice >= 10000000,
     );
     res.send(highvalueOrders);
   },
@@ -45,7 +46,7 @@ export const OrderController = {
       {
         quantity,
         price: product.price * quantity,
-      }
+      },
     );
 
     res.send(updatedOrder);
