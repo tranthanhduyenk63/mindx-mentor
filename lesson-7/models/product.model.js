@@ -1,20 +1,20 @@
 import mongoose from "mongoose";
 
-const OrderSchema = new mongoose.Schema(
+const ProductSchema = new mongoose.Schema(
   {
-    customerId: {
+    id: {
       type: String,
       require: true,
     },
-    productId: {
+    name: {
       type: String,
-      require: true,
-    },
-    quantity: {
-      type: Number,
       require: true,
     },
     price: {
+      type: Number,
+      require: true,
+    },
+    quantity: {
       type: Number,
       require: true,
     },
@@ -22,4 +22,4 @@ const OrderSchema = new mongoose.Schema(
   { timestamps: true },
 );
 
-export const Order = mongoose.model("Order", OrderSchema);
+export const Product = mongoose.model("Product", ProductSchema);
