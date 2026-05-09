@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
 import { Customer } from "../models/customer.model.js";
+import jwt from "jsonwebtoken";
 
 export const CustomerController = {
   register: async (req, res) => {
@@ -37,8 +38,22 @@ export const CustomerController = {
         .json({ message: "Email or password is incorrect" });
     }
 
-    const apiKey = `web-${customer.id}-${customer.email}-${process.env.SECRET_KEY}`;
+    // const apiKey = `web-${customer.id}-${customer.email}-${process.env.SECRET_KEY}`;
+    const secretKey = process.env.SECRET_KEY;
+    const token = jwt.sign(
+      {
+        customerId: customer.id,
+        name: customer.name,
+        role: "customer",
+        email: customer.email,
+      },
+      secretKey,
+      {
+        expiresIn: "1h",
+        algorithm: "HS256",
+      },
+    );
 
-    res.send({ apiKey });
+    res.send({ token });
   },
 };
